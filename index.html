@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project 3: Responsive Registration Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h2>THE CODE REVIEW</h2>
+        <h3>Signup for our newsletter</h3>
+        <div class="phrase">
+            <p class="special-line">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+
+        <form action="index.html" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="section-1">
+                    <label for="name">Full Name</label>
+                        <input required type="text" id="name" name="user_name" placeholder="Required">
+                </div>
+
+                <div class="section-1">
+                    <label for="email">Email Address</label>
+                        <input required type="text" id="email" name="user_email" placeholder="Required">
+                </div> 
+
+                <div class="section-1">
+                    <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" name="user_phone">
+                </div>  
+
+                <div class="section-1">
+                    <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address">
+                </div>
+
+                <div class="section-1">
+                    <label for="city">City</label>
+                        <input type="text" id="city" name="user_city">
+                </div>
+
+                <div class="section-1">
+                    <label for="state">State</label>
+                        <select id="state" name="user_state">
+                            <option>Choose State</option>
+                                <option>Alabama</option>
+                                <option>Alaska</option>
+                                <option>Arizona</option>
+                                <option>Arkansas</option>
+                                <option>California</option>
+                                <option>Colorado</option>
+                                <option>Connecticut</option>
+                                <option>Delaware</option>
+                                <option>Florida</option>
+                                <option>Georgia</option>
+                                <option>Hawaii</option>
+                                <option>Idaho</option>
+                                <option>Illinois</option>
+                                <option>Indiana</option>
+                                <option>Iowa</option>
+                                <option>Kansas</option>
+                                <option>Kentucky</option>
+                                <option>Louisiana</option>
+                                <option>Maine</option>
+                                <option>Maryland</option>
+                                <option>Massachusetts</option>
+                                <option>Michigan</option>
+                                <option>Minnesota</option>
+                                <option>Mississippi</option>
+                                <option>Missouri</option>
+                                <option>Montana</option>
+                                <option>Nebraska</option>
+                                <option>Nevada</option>
+                                <option>New Hampshire</option>
+                                <option>New Jersey</option>
+                                <option>New Mexico</option>
+                                <option>New York</option>
+                                <option>North Carolina</option>
+                                <option>North Dakota</option>
+                                <option>Ohio</option>
+                                <option>Oklahoma</option>
+                                <option>Oregon</option>
+                                <option>Pennsylvania</option>
+                                <option>Rhode Island</option>
+                                <option>South Carolina</option>
+                                <option>South Dakota</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Utah</option>
+                                <option>Vermont</option>
+                                <option>Virginia</option>
+                                <option>Washington</option>
+                                <option>West Virginia</option>
+                                <option>Wisconsin</option>
+                                <option>Wyoming</option>
+                        </select>
+                </div>
+
+                <div class="section-1">
+                    <label for="zipcode">Zip Code</label>
+                        <input type="number" id="zipcode" name="user_zipcode">
+                </div>
+
+                <hr>
+
+            </fieldset>
+
+            <fieldset class="section-2">
+                <legend>Newsletter</legend>
+                    <label>Select the newsletters you would like to receive</label>
+
+                        <div class="radio-checkbox-style">
+                            <input type="checkbox" id="news" name="user_checkbox"><label for="news">HTML News</label>
+                        </div>
+
+                        <div class="radio-checkbox-style">
+                            <input type="checkbox" id="css-news" name="user_checkbox"><label for="css-news">CSS News</label>
+                        </div>
+
+                        <div class="radio-checkbox-style">
+                            <input type="checkbox" id="JavaScript-news" name="user_checkbox"><label for="JavaScript-news">JavaScript News</label>
+                        </div>
+
+                    <label>Newsletter format</label>
+
+                        <div class="radio radio-checkbox-style">
+                            <input type="radio" id="html" name="user_radio"><label for="html">HTML</label>
+                        </div>
+
+                        <div class="radio radio-checkbox-style">
+                            <input type="radio" id="plain-text" name="user_radio"><label for="plain-text">Plain Text</label>
+                        </div>
+
+                    <label for="comment">Other topics you'd like to hear about</label>
+                        <textarea id="comment" name="other-topic" placeholder="Required"></textarea>
+            </fieldset>
+
+            <fieldset class="section-3">
+                <button>Sign Up</button>
+                <p>Copyright The Code Review</p>
+            </fieldset>
+        </form>
+    </body>
+</html>
