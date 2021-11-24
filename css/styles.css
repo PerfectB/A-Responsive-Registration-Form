@@ -172,11 +172,13 @@ textarea{
 }
 
 /*THE "REQUIRED" ON PLACEHOLDER TO THE RIGHT*/
-input[type="text"]::placeholder{
+input[type="text"]::placeholder,
+textarea[id="comment"]::placeholder{
     text-align: right;
     font: 10px "Roboto";
     font-style: italic;
     padding-right: 1px;
+    margin-right: 10px;
 }
 
 
@@ -259,7 +261,7 @@ button::after{
     right: 0;
     border: none;
     border-radius: 5px;
-    background-color: #FF8C00;
+    background: linear-gradient(to left top, #265372 35%, whitesmoke 65%);
     z-index: -1;
 }
 
@@ -269,12 +271,15 @@ button:hover::after{
     transition: all 0.5s ease;
 }
 
+button:focus,
 button:hover{
     transition: all 3s ease;
     box-shadow: 5px 5px black, -5px -5px #ccc;
     border-radius: 5px;
     width: calc(100% - 30px);
-    background-color: whitesmoke;
+    background-color: #FF8C00;
+    background: linear-gradient(0.25turn, #265372,whitesmoke, #FF8C00);
+    color: black;
 }
 
 
