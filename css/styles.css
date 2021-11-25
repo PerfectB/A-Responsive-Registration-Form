@@ -10,19 +10,15 @@
     padding: 0;
 }
 
-html{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     max-width: 767px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #EEEEEE;
-    margin: 10px;
-    padding: 10px;
+    margin: 0 10px 10px 10px;
+    padding: 0 10px 10px 10px;
 }
 
 h2{
@@ -30,7 +26,7 @@ h2{
     font: 16px "Merriweather";
     font-weight: bolder;
     padding: 30px;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     text-align: center;
     align-items: center;
     background-color: #222831;
@@ -154,9 +150,9 @@ select[id="state"]:focus,
 input[id="zipcode"]:focus,
 textarea:focus,
 select:focus{
-    box-shadow: 0 0 10px #b38266,
-                inset 0 0 10px #000;
-    background-color: #FBCEB1;
+    box-shadow: 0 0 10px #265372,
+                inset 0 0 10px #265372;
+    background-color: white;
     outline: none;
 }
 
@@ -234,7 +230,7 @@ input[type="radio"]{
     align-items: center;
 }
 
-button{
+input[type="submit"]{
     outline: none;
     width: calc(100% - 20px);
     margin: 10px;
@@ -250,30 +246,9 @@ button{
     z-index: 1;
 }
 
-button::after{
-    content:"";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -1000%;
-    right: 0;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(to left top, #265372 35%, whitesmoke 65%);
-    z-index: -1;
-}
-
-
-button:hover::after{
-    left:0;
-    transition: all 0.5s ease;
-}
-
-button:focus,
-button:hover{
-    transition: all 3s ease;
+input[type="submit"]:focus,
+input[type="submit"]:hover{
+    transition: all 2s ease;
     box-shadow: 5px 5px black, -5px -5px #ccc;
     border-radius: 5px;
     width: calc(100% - 30px);
